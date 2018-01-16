@@ -10,8 +10,8 @@ export function addRecipe({ day, recipe, meal }) {
     }
 }
 
-export const removeFromCalendar = ( day, meal ) => ({
-        type: REMOVE_FROM_CALENDAR,
-        day,
-        meal,
+export const removeFromCalendar = ({ day, meal }) => ({
+    type: REMOVE_FROM_CALENDAR,
+    day,
+    meal,
 });
